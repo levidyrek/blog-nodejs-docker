@@ -1,12 +1,12 @@
 version: "3"
 volumes:
-  blog-node-modules:
+  blog_node_modules:
 services:
   app:
     build: .
     user: "node"
     volumes:
       - ./:/home/node/app
-      - blog-node-modules:/home/node/app/node_modules/
+      - blog_node_modules:/home/node/app/node_modules/
     ports:
       - "3000:3000"
